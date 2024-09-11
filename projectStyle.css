@@ -1,0 +1,307 @@
+*{
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.perent{
+    display: flex;
+    height: 100vh;
+    
+}
+.sidebar{
+    /* background-color: red; */
+    width: 380px;
+}
+.content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    overflow: auto;
+}
+.controler{
+    /* background-color: blue; */
+    position: fixed;
+    bottom: 0px;
+    height: 4rem;
+    width: 100vw;
+}
+.sidebar .nav {
+    background-color: #121212;
+    color: white;
+    height: 5rem;
+    border-radius: 1rem;
+    margin: .5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sidebar .nav .nav-item{
+    line-height: 3rem;
+    font-size: 1.25rem;
+    background-color: #121212;
+}
+.sidebar .nav .nav-item i{
+    font-size: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #121212;
+}
+.sidebar .nav .nav-item a{
+    line-height: 2rem;
+    text-decoration: none;
+    background-color: #121212;
+}
+.sidebar .library {
+    background-color: #121212;
+    height: 35rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    overflow: auto;
+}
+.sidebar .library .head{
+    background-color: #121212;
+    font-size: 1.25rem;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar .library .head .heading{
+    background-color: #121212;
+}
+.sidebar .library .head .icon{
+    background-color: #121212;
+}
+.sidebar .library .head .icon i{
+    padding-left: 1rem;
+}
+.sidebar .library .head i{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: #121212;
+}
+.sidebar .library .head img{
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+.sidebar .library .body{
+    padding: 1rem;
+    background-color: #121212;
+}
+.sidebar .library .body .box{
+    padding: 1rem;
+    background-color: #232323;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+.sidebar .library .body .box button{
+    background-color: white;
+    color: black;
+    height: 2rem;
+    width: fit-content;
+    border-radius: 100px;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+.boxheading, .boxline{
+    background-color: #232323;
+    margin-bottom: 1rem;
+}
+.content .nav2{
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 3px black;
+    height: 3.5rem;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.nav2 .left{
+    padding-left: 1rem;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+.nav2 img{
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: #121212;
+}
+.nav2 .right{
+    background-color: #121212;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    padding-top: 0.25rem;
+}
+.nav2 .right button{
+    margin-left: 1rem;
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+}
+.premium, .install{
+    border-radius: 100px;
+    padding: 0 1rem;
+}
+.install{
+    background-color: white;
+    color: black;
+}
+.install i{
+    color: black;
+    background-color: white;
+}
+.fa-user{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: #121212;
+}
+.user{
+    background-color: #121212;
+    padding-top: 1rem;
+}
+@media(max-width:1000px){
+    .premium{
+        display: none;
+    }
+}
+.maincontent{
+    padding-left: 2rem;
+    background-color: #121212;
+}
+h2{
+    background-color: #121212;
+}
+.cardcontainer{
+    background-color: #121212;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    width: 180px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    background-color: #232323;
+}
+.card p{
+    background-color: #232323;
+}
+.controler {
+    display: flex;
+}
+.controler .album{
+    width: 25%;
+}
+.controler .player{
+    width: 50%;
+}
+.controler .controls{
+    width: 25%;
+}
+.controler .player .player_upper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 9rem;
+    height: 2.5rem;
+}
+.controler .player .player_upper .icon{
+    height: 1rem;
+    opacity: 0.7;
+}
+.controler .player .player_upper .icon:hover{
+    opacity: 1;
+}
+.controler .player .player_upper .pb{
+    height: 2rem;
+    opacity: 1;
+}
+.controler .player .player_upper .pb:hover{
+    height: 2.2rem;
+}
+.controler .player .player_lower{
+    display: flex;
+    justify-content: center;
+    height: 1.5rem;
+    align-items: center;
+}
+.controler .player .player_lower .track{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.track::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.controler .player .player_lower .track::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    
+}
+.controler .player .player_lower span{
+    margin: 0 1rem;
+}
+.controler .album{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.controler .album .album_icon{
+    opacity: 0.7;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.controler .album .album_icon:hover{
+    opacity: 1;
+}
+.controler .controls input{
+    cursor: pointer;
+}
+.controler .controls img{
+    height: 1.2rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    opacity: 0.7;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.controler .controls img:hover{
+    opacity: 1;
+}
+.controls .track::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 100px;
+}
+.controler .controls .track::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
